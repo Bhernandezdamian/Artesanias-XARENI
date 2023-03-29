@@ -1,0 +1,84 @@
+/* Establecemos una paleta de colores atractiva */
+:root {
+	--color-primario: #a6dcef;
+	--color-secundario: #f4f4f4;
+	--color-terciario: #dd3db5;
+	--color-texto: #333;
+}
+
+body {
+	background-color: var(--color-secundario);
+	color: var(--color-texto);
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.
+}
+/* Establecemos el estilo del encabezado */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-terciario);
+	padding: 10px;
+	}
+	
+	header h1 {
+	color: var(--color-primario);
+	font-size: 2em;
+	margin: 0;
+	}
+	
+	header a img {
+	height: 40px;
+	width: 40px;
+	}
+	
+	/* Establecemos el estilo de los productos */
+	main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	
+	.producto {
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	margin: 20px;
+	max-width: 400px;
+	padding: 20px;
+	text-align: center;
+	transition: box-shadow 0.3s ease-in-out;
+	width: 100%;
+	}
+	
+	.producto:hover {
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	}
+	
+	.producto img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	}
+	
+	.producto h2 {
+	color: var(--color-terciario);
+	font-size: 1.5em;
+	margin: 20px 0;
+	}
+	
+	.producto p {
+	color: var(--color-texto);
+	font-size: 1.2em;
+	margin: 0;
+	}
+	
+	/* Establecemos el estilo para dispositivos móviles */
+	@media only screen and (max-width: 600px) {
+	.producto {
+	margin: 10px;
+	max-width: none;
+	width: calc(100% - 20px);
+	}
+	}
